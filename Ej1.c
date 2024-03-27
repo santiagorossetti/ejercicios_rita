@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 	printf("Ingrese el ejercicio deseado del 1 al 5\n");
 	scanf("%d" , &ejercicio);
 		
-		if (ejercicio > 5 && ejercicio < 1 ){
+		if (ejercicio > 5 || ejercicio < 1 ){
 			printf("te dije que sea del 1 al 5");
 			return 0;
 		}
