@@ -1,19 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
 	
 	int num;
 	int result;
 	
+	puts("ingrese el numero deseado");
+	scanf("%d" , &num);
+	
 	while(num != 1){
 		
-		if (num % 2 = 0){
-			
+		if (num % 2 == 0){
+			result = num / 2;
+			num = result;
+		} else {
+			result = (num * 3) + 1;
+			num = result;
 		}
 	
+	printf("%d " , num);
 		
 	}
 	
